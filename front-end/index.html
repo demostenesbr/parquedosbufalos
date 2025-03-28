@@ -6,8 +6,8 @@
     <title>Parque dos Búfalos</title>
     <link rel="icon" href="src/assets/Logo-Parque-dos-Bufalos.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script src="src/javascript/script.js"></script>
+    
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-JexV9wIOfXNzd8kUC/fAULmHbaFQX3Q2bM7FeBV0fwV73E6RQIzmt5t9BJXKz9H7" crossorigin="anonymous">
     
@@ -46,31 +46,71 @@
     </div>
 
     <div class="atividades-do-parque-container">
-        <h1 class="atividades-do-parque-titulo">Atividades do Parque</h1>
+        <h1>Atividades do Parque</h1>
         
 
-        <ul class="card_activity-of-park">
+        <div class="card_activity-of-park">
             
-            <li> <img src="src/assets/index/card_activity-of-park/piquenique.jpg" alt="Imagem de um piquenique, fundo verde em natureza aberta, com árvores e frutas ao meio da imagem"> </li>
-            <li> <img src="src/assets/index/card_activity-of-park/caminhada.jpeg" alt="Imagem de uma estrada para caminhada com fundo verde em árvores e natureza aberta"> </li>
-            <li> <img src="src/assets/index/card_activity-of-park/educacao_ambiental.jpeg" alt="Imagem de crianças segurando um planeta, com fundo em céu azul limpo e a natureza ao redor"> </li>
+            <div class="row align-items-start">
+                <div class="col-3">
+                    <img src="src/assets/index/card_activity-of-park/piquenique.jpg" alt="Imagem de um piquenique, fundo verde em natureza aberta, com árvores e frutas ao meio da imagem">
+                </div>
+                <div class="col-3">
+                    <h2> Traga seu lanche </h2>
+                </div>
+                <div class="col">
+                    <p> E faça uma boquinha </p>
+                </div>
+            </div>
 
-                <li><h2> Traga seu lanche </h2></li>
-                <li><h2> Caminhada </h2></li>
-                <li><h2> Educação Ambiental </h2></li>
 
-                    <li><p> E faça uma boquinha</p></li>
-                    <li><p> Venha caminhar, respire um ar puro e aproveite a paisagem. 
-                        <br> Um lazer a grupo também é bem vindo, acompanhe as próximas atividades! </p></li>
-                    <li><p> Atividades relacionadas a ambientação, verfique e acompanhe conosco! </p></li>            
+            <div class="row align-items-start">
+                <div class="col">
+                    <img src="src/assets/index/card_activity-of-park/caminhada.jpeg" alt="Imagem de uma estrada para caminhada com fundo verde em árvores e natureza aberta">
+                </div>
+                <div class="col">
+                    <h2> Caminhada </h2>
+                </div>
+                <div class="col">
+                    <p> Venha caminhar, respire um ar puro e aproveite a paisagem. 
+                        <br> Um lazer a grupo também é bem vindo, acompanhe as próximas atividades! </p>
+                </div>
+            </div>
+
+            <div class="row align-items-start">
+                <div class="col">
+                    <img src="src/assets/index/card_activity-of-park/educacao_ambiental.jpeg" alt="Imagem de crianças segurando um planeta, com fundo em céu azul limpo e a natureza ao redor">
+                </div>
+                <div class="col">
+                    <h2> Educação Ambiental </h2>
+                </div>
+                <div class="col">
+                    <p> Atividades relacionadas a ambientação, verfique e acompanhe conosco! </p>
+                </div>
+            </div>
+            
         </div>
     </div>
     
     <div class="plano-de-gestao-da-onu-container">
-        <h1> Plano de Gestão da ONU </h1>
+        <h1> Plano de Gestão do Parque </h1>
+
+            <div  class="plano-de-gestao-da-onu-menu">
+
+                <ul id="plano-gestao-do-parque_dynamic-content">
+                    <!-- Conteúdo carregado dinamicamente -->
+                </ul>                
+                <img src="src/assets/index/plano-gestao-onu/Plano_gestao.jpg">
+        
+            </div>
+
+            <ol class="plano-gestao-onu_dynamic-buttons"> 
+                <li><button data-section="section1" class="active"> Próximas Atividades </button></li>
+                <li><button data-section="section2"> Anteriormente Concluídas </button></li>
+            </ol>
     </div>
 
+    <script src="src/javascript/script.js"></script>
 </body>
-
 
 </html>

@@ -17,6 +17,8 @@ body {
 
 }
 
+
+
 /* NAVIGATION BUTTONS */
 
 .nav-bar {
@@ -89,6 +91,10 @@ body {
     
 }
 
+
+
+
+/*HOME-SCREEN: */
 .container-home-first-screen {
     position: relative;
 
@@ -181,16 +187,18 @@ body {
     /* width: 80%; Perguntar pra galera dps ----------------------------------------------*****/
     margin-left: 100px;
     margin-right: 100px;
+    width: 1180px;
     height: 600px;
+    justify-self: center;
+    
     
 
 }
 
-.atividades-do-parque-titulo {
+.atividades-do-parque-container h1 {
 
     /* margin-top: 100px; Perguntar pra galera dps ----------------------------------------------*****/
     margin-bottom: 40px;
-    
     margin-top: -05px;
     font-size: 32px;
 
@@ -242,9 +250,100 @@ body {
 /* PLANO DE GESTÃO DA ONU:  */
 
 .plano-de-gestao-da-onu-container {
-    
+        
         margin-left: 100px;
         margin-right: 100px;
+        width: 1180px;
         height: 600px;
+        max-width: 1200px;
+        justify-self: center;
+        
+        
+
 }
 
+
+.plano-de-gestao-da-onu-menu {
+
+    margin-bottom: 20px;
+    display: flex;
+    
+
+}
+
+.plano-de-gestao-da-onu-menu #content {
+    flex-direction: column;
+    
+}
+
+.plano-de-gestao-da-onu-menu li{
+    width: 70%;
+    list-style: none;
+    
+}
+
+.plano-de-gestao-da-onu-menu li p3 {
+    position: relative;
+    left: 40px;
+    color: #5f5959;
+}
+
+
+.plano-de-gestao-da-onu-menu img {
+
+    /* position: relative; */
+    /* align-items: flex-start; */
+    margin-left: 35px;
+    margin-top: -60px;
+    width: 450px;
+    height: 450px;
+    border-radius: 8px;
+      
+}
+
+
+.plano-gestao-onu_dynamic-buttons {
+    display: flex;
+    gap: 70px;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    list-style: none;
+
+}
+
+.plano-gestao-onu_dynamic-buttons button {
+
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #dedede;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.plano-gestao-onu_dynamic-buttons button:hover {
+
+    color: rgb(0, 0, 0);
+    transform: scale(1.05);
+
+}
+
+.plano-gestao-onu_dynamic-buttons button:active {
+    transform: scale(0.95);
+}
+
+.plano-gestao-onu_dynamic-buttons button.active {
+    
+    background: linear-gradient(90deg, #40ff40, #179407);
+    /* background: linear-gradient(40deg, #1eff00, #c4ffc2);  Gradiente top meo depois analisar */
+    /* background: black; PERGUNTAR PRA GALERA DEPOIS --------------------------**** */
+    color: rgb(0, 0, 0);
+    /* color: white; PERGUNTAR PRA GALERA DEPOISSSSSSSSSSSSS -------------------**** */
+    box-shadow: 0px 0px 12px rgb(9, 255, 0);
+}
